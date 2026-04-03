@@ -50,3 +50,5 @@ The exocortex is built on a few principles:
 ## For teams
 
 When everyone on a team maintains their own exocortex, collaboration becomes legible without meetings or status updates. You can see what someone is focused on by reading their `attention.md`. Project repos can have their own cortex-like structure (README as aspiration, status docs for current state, todo files for next steps) that individual exocortices point into.
+
+At Auki, we've tried this in the github.com/aukilabs/auki repo
