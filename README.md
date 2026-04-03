@@ -14,11 +14,13 @@ An exocortex is a structured external memory that helps you:
 
 ## Getting started
 
-1. Fork or clone this repo
-2. Fill in `values.md` — what do you care about?
-3. Fill in `goals.md` — what are you working toward?
-4. Set your first `attention.md` — what are you focused on right now?
-5. Start a conversation with your AI agent — it will read your exocortex and help you stay on track
+```bash
+git clone https://github.com/Broodsugar/exocortex.git my-exocortex
+cd my-exocortex
+bash setup.sh
+```
+
+Answer the questions, and your exocortex is ready. Push it to your own repo and start working with your AI agent.
 
 ## Structure
 
