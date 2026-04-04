@@ -1,0 +1,33 @@
+# Contributing
+
+Every change to any document in this repo should be logged in changelog.md and promptlog.md.
+
+**Always update promptlog.md before changelog.md.** The changelog references PromptIDs, so the promptlog entry must exist first to avoid dangling references.
+
+---
+
+## Changelog
+
+Append-only, latest entry on top.
+
+| Field | Description |
+|-------|-------------|
+| **Timestamp** | When it happened (e.g. `Apr 2, 21:03 HKT, 2026`) |
+| **Change** | What changed |
+| **Justification** | Why it changed |
+| **PromptID** | Sequential ID matching the promptlog, or a name for human entries |
+
+Humans may manually add to the changelog using their name as the PromptID. Human entries do not count towards the PromptID sequence counter.
+
+## Promptlog
+
+Append-only, latest entry on top.
+
+| Field | Description |
+|-------|-------------|
+| **Timestamp** | When the prompt was sent |
+| **PromptID** | Sequential ID |
+| **Prompt** | The original prompt (summarized if long) |
+| **Relevance** | 0–1 score against the current attention goal in attention.md |
+
+The relevance score resets each session (since attention goals change between sessions). If the last 10 prompts in the current session have a cumulative relevance below 0.5, Claude should challenge the owner to refocus.
